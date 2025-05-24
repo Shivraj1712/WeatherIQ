@@ -47,7 +47,7 @@ main {
 /* Container holding all weather cards */
 .container {
   height: 85vh;
-  width: 90vw;
+  width: 95vw;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
