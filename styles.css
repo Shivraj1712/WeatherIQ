@@ -1,0 +1,103 @@
+/* Reset default spacing */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Body background and font color */
+body {
+  background: linear-gradient(125deg, #86f7f9, #66a6ff); /* Light mode background */
+  color: #222; /* Font color */
+}
+
+/* Header section */
+header {
+  height: 15vh;
+  font-size: 4.5vmin;
+  font-family: "poppins", roboto;
+}
+
+/* Navigation inside header */
+header nav ul {
+  padding: 3vmin 0 0 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Dark/Light mode toggle button */
+#toggle {
+  height: 8vmin;
+  width: 10vmin;
+  font-size: 4vmin;
+  border: 2px #66a6ff solid;
+  background-color: #222;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Layout for main content */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Container holding all weather cards */
+.container {
+  height: 85vh;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+
+/* City name */
+.container h2 {
+  font-family: arial;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/* Weather detail text */
+.container h4 {
+  font-family: roboto;
+}
+
+/* Weather card style */
+.city {
+  padding: 2px;
+  height: 25vmin;
+  width: 30vmin;
+  border: 4px solid;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+/* Footer style */
+footer {
+  font-size: 5vmin;
+  text-align: center;
+  padding-bottom: 5vmin;
+  font-family: roboto;
+}
+
+/* Media query: mobile */
+@media (max-width: 480px) {
+  .container {
+    font-size: 60%;
+  }
+}
+
+/* Media query: tablet */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    font-size: 60%;
+  }
+}
