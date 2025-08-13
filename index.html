@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherIQ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="clouds.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h3 class="siteicon">
+            <img src="clouds.png" id="logo" alt="WeatherIQ Logo">WeatherIQ
+        </h3>
+        <nav>
+            <ul>
+                <li>
+                    <input type="text" id="cityname" placeholder="Search City" aria-label="Enter city name">
+                </li>
+                <li>
+                    <button onclick="searchData()" id="searchBtn" aria-label="Search for city">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main role="main">
+        <section class="mainsection">
+            <div class="detailstop">
+                <h1 id="cityDisplay">City Name</h1>
+                <div class="currentdetails">
+                    <span><h3 id="dateDisplay">Date</h3></span>
+                    <span>
+                        <ul class="time">
+                            <li id="hour">00</li>
+                            <li>:</li>
+                            <li id="minute">00</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+
+            <div class="detailsmiddle">
+                <img src="clear.png" alt="">
+                <h2 id="tempDisplay">--°C</h2>
+            </div>
+
+            <div class="detailsbottom">
+                <ul>
+                    <li><img src="wind.png" alt="Wind icon"><h3 id="wind">-- km/h</h3></li>
+                    <li><img src="humidity.png" alt="Humidity icon"><h3 id="humidity">--%</h3></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 WeatherIQ. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
